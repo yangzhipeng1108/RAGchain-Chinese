@@ -1,12 +1,12 @@
 from typing import List
 
-from langchain.vectorstores import Chroma
+from langchain.vectorstores import Chroma,PGVector
 
 from RAGchain.schema import Passage
 from RAGchain.utils.vectorstore.base import SlimVectorStore
 
 
-class ChromaSlim(Chroma, SlimVectorStore):
+class ChromaSlim(PGVector, SlimVectorStore):
     """
     Chroma vector store stores only passage_id and vector.
     """

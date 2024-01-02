@@ -10,6 +10,8 @@ class EmbeddingType(Enum):
     KO_SROBERTA_MULTITASK = 'ko-sroberta-multitask'
     MULTILINGUAL_E5 = 'multilingual-e5'
     CONTRIEVER = 'contriever'
+    BGE_LARGE_ZH = 'bge-large-zh'
+    M3E = 'm3e'
 
 
 class EmbeddingFactory:
@@ -42,6 +44,10 @@ class EmbeddingFactory:
             self.embed_type = EmbeddingType.MULTILINGUAL_E5
         elif embed_type in text_modifier('contriever'):
             self.embed_type = EmbeddingType.CONTRIEVER
+        elif embed_type in text_modifier('bge-large-zh'):
+            self.embed_type = EmbeddingType.BGE_LARGE_ZH
+        elif embed_type in text_modifier('m3e'):
+            self.embed_type = EmbeddingType.M3E
         else:
             raise ValueError(f"Unknown embedding type: {embed_type}")
 
@@ -80,6 +86,12 @@ class EmbeddingFactory:
                                                      {"device": self.device_type})
         elif self.embed_type == EmbeddingType.CONTRIEVER:
             return self.__set_huggingface_embeddings("facebook/mcontriever-msmarco",
+                                                     {"device": self.device_type})
+        elif self.embed_type == EmbeddingType.CONTRIEVER:
+            return self.__set_huggingface_embeddings("BAAI/bge-large-zh-v1.5",
+                                                     {"device": self.device_type})
+        elif self.embed_type == EmbeddingType.CONTRIEVER:
+            return self.__set_huggingface_embeddings("moka-ai/m3e-large",
                                                      {"device": self.device_type})
         else:
             raise ValueError(f"Unknown embedding type: {self.embed_type}")
