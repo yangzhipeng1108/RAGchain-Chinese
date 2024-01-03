@@ -36,20 +36,13 @@ own questions and various datasets.
 
 
 # Installation
-## From pip
-
-simply install at pypi.
-
-```bash
-pip install RAGchain
-```
 
 ## From source
 First, clone this git repository to your local machine.
 
 ```bash
-git clone https://github.com/NomaDamas/RAGchain.git
-cd RAGchain
+git https://github.com/yangzhipeng1108/RAGchain-Chinese.git
+cd RAGchain-Chinese
 ```
 
 Then, install RAGchain module.
@@ -63,16 +56,41 @@ pip install dev_requirements.txt
 ```
 
 # Supporting Features
+
+## file Loaders
+- ppt
+- pdf
+- docx
+- excel
+- NomaDamas/Ko-StrategyQA
+- hwp
+- Markdown
+
+## text splitter
+- code
+- html
+- latex
+- markdown
+- text
+- token
+- chinese_text
+- AliText
+- AliWord
+- parent_and_child
+
+## OCR Loaders
+
+- [Nougat](https://github.com/facebookresearch/nougat)
+- [Deepdoctection](https://github.com/deepdoctection/deepdoctection)
+- PaddleOCR
+
 ## Retrievals
 - BM25
 - Vector DB
 - Hybrid ([rrf](https://www.elastic.co/guide/en/elasticsearch/reference/current/rrf.html) and [cc](https://arxiv.org/abs/2210.11934))
 - [HyDE](https://arxiv.org/abs/2212.10496)
 
-## OCR Loaders
 
-- [Nougat](https://github.com/facebookresearch/nougat)
-- [Deepdoctection](https://github.com/deepdoctection/deepdoctection)
 
 ## Rerankers
 - [UPR](https://github.com/DevSinghSachan/unsupervised-passage-reranking)
@@ -87,8 +105,28 @@ pip install dev_requirements.txt
 
 ## Extra utils
 - Query Decomposition
+- Query Generate
 - Evidence Extractor
+- Step_Back_Prompting
 - [REDE](https://arxiv.org/pdf/2109.08820.pdf) Search Detector
+- RAG Fusion
+
+## embedding
+- openai
+- kosimcse
+- ko-sroberta-multitask
+- multilingual-e5
+- contriever
+- bge-large-zh
+- m3e
+
+## vectorstore
+- chroma
+- faiss
+- milvus
+- pgEmbedding
+- pgVector
+- pinecone
 
 ## Dataset Evaluators
 
@@ -102,4 +140,4 @@ pip install dev_requirements.txt
 We welcome any contributions. Please feel free to raise issues and submit pull requests.
 
 # Acknowledgement
-This project was developed by [NomaDamas](https://github.com/NomaDamas), an open-source project group based in Seoul. The project is licensed under the Apache 2.0 License.
+This project was developed by [yangzhipeng](https://github.com/yangzhipeng1108), an open-source project group based in Seoul. The project is licensed under the Apache 2.0 License.
