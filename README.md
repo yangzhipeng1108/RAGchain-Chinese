@@ -56,7 +56,6 @@ pip install dev_requirements.txt
 - pdf
 - docx
 - excel
-- NomaDamas/Ko-StrategyQA
 - hwp
 - Markdown
 
