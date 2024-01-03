@@ -7,12 +7,6 @@ RAGchain is designed to overcome these limitations by providing powerful feature
 Also, it is partially compatible with Langchain, allowing you to leverage many of its integrations for vector storage,
 embeddings, document loaders, and LLM models.
 
-[Docs](https://nomadamas.gitbook.io/ragchain-docs/) | [API Spec](https://nomadamas.github.io/RAGchain) | [QuickStart](https://nomadamas.gitbook.io/ragchain-docs/quick-start)
-
-# Quick Install
-```bash
-pip install RAGchain
-```
 
 # Why RAGchain?
 RAGchain offers several powerful features for building high-quality RAG workflows:
