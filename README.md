@@ -106,8 +106,6 @@ pip install dev_requirements.txt
 
 ## embedding
 - openai
-- kosimcse
-- ko-sroberta-multitask
 - multilingual-e5
 - contriever
 - bge-large-zh
