@@ -120,12 +120,10 @@ pip install dev_requirements.txt
 - pinecone
 
 ## Dataset Evaluators
-
 - [MS-MARCO](https://paperswithcode.com/dataset/ms-marco)
 - [Mr. Tydi](https://arxiv.org/abs/2108.08787)
 - [Qasper](https://paperswithcode.com/dataset/qasper)
 - [StrategyQA](https://allenai.org/data/strategyqa)
-- [KoStrategyQA](https://huggingface.co/datasets/NomaDamas/Ko-StrategyQA)
 
 # Contributing
 We welcome any contributions. Please feel free to raise issues and submit pull requests.
