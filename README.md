@@ -80,6 +80,7 @@ pip install dev_requirements.txt
 ## Retrievals
 - BM25
 - Vector DB
+- ColBERTv2
 - Hybrid ([rrf](https://www.elastic.co/guide/en/elasticsearch/reference/current/rrf.html) and [cc](https://arxiv.org/abs/2210.11934))
 - [HyDE](https://arxiv.org/abs/2212.10496)
 
